@@ -1,5 +1,6 @@
 # 2D Wound Segmentation
 This project aims at wound area segmentation from natural images in clinical settings. The architectures tested so far includes: U-Net, MobileNetV2, SegNet, VGG16.
+![Intro_Image](https://raw.githubusercontent.com/Pele324/ChronicWoundSeg/master/figures/Intro.png)
 ## Install requirements
      pip install -r requirements.txt
      
