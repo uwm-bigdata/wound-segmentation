@@ -5,7 +5,7 @@ This project aims at wound area segmentation from natural images in clinical set
      pip install -r requirements.txt
      
 ## Data
-The training dataset is built by our lab and collaboration parties. For a sample testing dataset please try the [Medetec Wound Database](http://www.medetec.co.uk/files/medetec-image-databases.html) in the data folder.
+The training dataset is built by our lab and collaboration parties. For a sample dataset please try the [Medetec Wound Database](http://www.medetec.co.uk/files/medetec-image-databases.html) in the data folder.
     
 ## Run
     python3 train.py
