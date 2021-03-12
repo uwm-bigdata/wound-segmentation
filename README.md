@@ -9,8 +9,8 @@ Wang, C., Anisuzzaman, D.M., Williamson, V. et al. Fully automatic wound segment
 ## Data
 The training dataset is built by our lab and collaboration clinic, Advancing the Zenith of Healthcare (AZH) Wound and Vascular Center. With their permission, we are sharing this dataset (./data/wound_dataset/) publicly. This dataset was fully annotated by wound professionals and preprocessed with cropping and zero-padding.  
   
-Update:  
-The dataset is now available as a MICCAI online challenge. The training and validation dataset are published [here](https://github.com/uwm-bigdata/wound-segmentation/tree/master/data/Foot%20Ulcer%20Segmentation%20Challenge) and we will start evaluating on the testing dataset in August. Please find more details about the challenge [here](http://www.miccai.org/events/challenges/) and [here](https://fusc.grand-challenge.org/).
+Update 3/12/2021:  
+The dataset is now available as a MICCAI online challenge. The training and validation dataset are published [here](https://github.com/uwm-bigdata/wound-segmentation/tree/master/data/Foot%20Ulcer%20Segmentation%20Challenge) and we will start evaluating on the testing dataset in August 2021. Please find more details about the challenge [here](http://www.miccai.org/events/challenges/) and [here](https://fusc.grand-challenge.org/).
     
 ## Run
     python3 train.py
