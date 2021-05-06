@@ -13,7 +13,7 @@ Update 3/12/2021:
 The dataset is now available as a MICCAI online challenge. The training and validation dataset are published [here](https://github.com/uwm-bigdata/wound-segmentation/tree/master/data/Foot%20Ulcer%20Segmentation%20Challenge) and we will start evaluating on the testing dataset in August 2021. Please find more details about the challenge [here](http://www.miccai.org/events/challenges/) and [here](https://fusc.grand-challenge.org/).
 
 ## Requirements
-tensorflow-gpu==1.13
+tensorflow-gpu==1.13  
 Keras==2.2.4
     
 ## Run
