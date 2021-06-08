@@ -1,2 +1,18 @@
-## **The Foot Ulcer Segmentation Challenge**  
+## **The Foot Ulcer Segmentation Challenge (FUSeg)**  
+![Dataset_Image](https://raw.githubusercontent.com/Pele324/ChronicWoundSeg/master/figures/Dataset.png)
+
+FUSeg is a MICCAI endorsed challenge. 
 For details please check https://fusc.grand-challenge.org/FUSeg-2021/
+
+# Folder structure
+.  
+│── train &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # training dataset  
+│   ├── images &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # training images  
+│   └── labels &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # ground truth masks  
+│── validation &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # validation dataset  
+│   ├── images &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # validation images  
+│   └── labels &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # ground truth masks  
+└── test &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # testing dataset (to be published...)  
+
+# Publication
+Wang, C., Anisuzzaman, D.M., Williamson, V. et al. Fully automatic wound segmentation with deep convolutional neural networks. Sci Rep 10, 21897 (2020). https://doi.org/10.1038/s41598-020-78799-w
