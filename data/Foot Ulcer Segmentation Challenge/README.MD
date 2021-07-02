@@ -17,7 +17,7 @@ For details please check our [homepage](https://fusc.grand-challenge.org/FUSeg-2
 # Updates  
 3/9/2021  The training and validation dataset is published.  
 Testing data will be released in July 2021.  
-Submission deadline: 15/07/2021.  
+Submission deadline: 15/07/2021.  (The deadline was moved forward from 01/08/2021 to 15/07/2021)
 
 # Publication
 Wang, C., Anisuzzaman, D.M., Williamson, V. et al. Fully automatic wound segmentation with deep convolutional neural networks. Sci Rep 10, 21897 (2020). https://doi.org/10.1038/s41598-020-78799-w
