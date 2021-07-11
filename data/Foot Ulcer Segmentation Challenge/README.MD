@@ -2,7 +2,7 @@
 ![Dataset_Image](https://raw.githubusercontent.com/Pele324/ChronicWoundSeg/master/figures/Dataset.png)
 
 FUSeg is a MICCAI endorsed challenge.   
-For details please check our [homepage](https://fusc.grand-challenge.org/FUSeg-2021/) on grand-challenge.org and our [challenge design](https://github.com/uwm-bigdata/wound-segmentation/blob/master/data/Foot%20Ulcer%20Segmentation%20Challenge/FootUlcerSegmentationChallenge2021.pdf).   
+For more details please check our [homepage](https://fusc.grand-challenge.org/FUSeg-2021/) on grand-challenge.org and our [challenge design](https://github.com/uwm-bigdata/wound-segmentation/blob/master/data/Foot%20Ulcer%20Segmentation%20Challenge/FootUlcerSegmentationChallenge2021.pdf).   
 
 # Submission Instructions  
 __The brief version__:  
