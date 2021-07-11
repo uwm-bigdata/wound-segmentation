@@ -16,7 +16,7 @@ To make sure that we will be able to run all submitted algorithms, we would like
 4. Please make sure that we will have all dependencies when we run your container. The best practice is to include the installations of dependencies (```RUN pip install -r requirements.txt```) in the Dockerfile when you build your container.  
 6. Please tag your container with "FUSeg2021" followed by your name, organization, or any other reasonable info (for exampple, "FUSeg2021_ChuanboWang_UW-Milwaukee"). 
 7. It would be very helpfull to us if your algorithm generates masks as binary images (where pixel value 0 indicates non-wound and pixel value 1 indicates wound) with the same filenames as the original images.
-8. Please double check that your cintainer is ready to be run before submission.  
+8. Please double check that your container is ready to be run before submission.  
 9. Please send the submission docker container to chuanbo@uwm.edu. If your container is too big, upload it to Docker Hub or any cloud storage and send a link to the provided email.
 
 # Evaluation Process
