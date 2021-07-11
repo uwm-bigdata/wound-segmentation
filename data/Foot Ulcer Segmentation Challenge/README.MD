@@ -6,7 +6,17 @@ You have found the FUSeg challenge! (MICCAI endorsed challenge)
 The goal of this challenge is to segment the wound area from natural images photographed during clinical visits. In the dataset provided, over 1000 images are collected over 2 years from hundreds of patients. All images are completely de-identified by removing personal identifiers defined by HIPAA.   
   
 More details in our [homepage](https://fusc.grand-challenge.org/FUSeg-2021/) on grand-challenge.org and our [challenge design](https://github.com/uwm-bigdata/wound-segmentation/blob/master/data/Foot%20Ulcer%20Segmentation%20Challenge/FootUlcerSegmentationChallenge2021.pdf).   
-
+  
+# Folder structure
+.  
+│── train &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # training dataset  
+│   ├── images &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # training images  
+│   └── labels &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # ground truth masks  
+│── validation &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # validation dataset  
+│   ├── images &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # validation images  
+│   └── labels &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # ground truth masks  
+└── test &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # testing dataset  
+  
 # Submission Instructions  
 __The brief version__:  
 Please submit your algorithm in a ready-to-use Docker container that should be able to generate segmentation masks from the provided test images.
@@ -28,15 +38,6 @@ To make sure that we will be able to run all submitted algorithms, we would like
 3. The evaluation algorithm will compute the precision, the average dice similarity coefficient (DSC), and the average intersection over union rate(IOU).  
 4. Challenge rankings will be based on average DSC. Precision will be used in case of DSC ties.
 
-# Folder structure
-.  
-│── train &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # training dataset  
-│   ├── images &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # training images  
-│   └── labels &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # ground truth masks  
-│── validation &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # validation dataset  
-│   ├── images &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # validation images  
-│   └── labels &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # ground truth masks  
-└── test &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # testing dataset
 
 # Updates  
 Mar 9 2021  The training and validation dataset is published.  
