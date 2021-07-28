@@ -3,7 +3,7 @@
 
 You have found the FUSeg challenge!  An open challenge endorsed by MICCAI.  
   
-The goal of this challenge is to segment the wound area from natural images photographed during clinical visits. In the dataset provided, over 1000 images are collected over 2 years from hundreds of patients. All images are completely de-identified by removing personal identifiers defined by HIPAA.   
+The goal of this challenge is to segment the wound area from natural images photographed during clinical visits. In the dataset provided, over 1200 images are collected over 2 years from hundreds of patients. All images are completely de-identified by removing personal identifiers defined by HIPAA.   
   
 More details in our [homepage](https://fusc.grand-challenge.org/FUSeg-2021/) on grand-challenge.org and our [challenge design](https://github.com/uwm-bigdata/wound-segmentation/blob/master/data/Foot%20Ulcer%20Segmentation%20Challenge/FootUlcerSegmentationChallenge2021.pdf).   
   
