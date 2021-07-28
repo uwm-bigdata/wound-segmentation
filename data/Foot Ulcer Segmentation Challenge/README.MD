@@ -1,7 +1,7 @@
 ## **The Foot Ulcer Segmentation Challenge (FUSeg)**  
 ![Dataset_Image](https://raw.githubusercontent.com/Pele324/ChronicWoundSeg/master/figures/Dataset.png)
 
-You have found the FUSeg challenge! (MICCAI endorsed challenge)   
+You have found the FUSeg challenge!  An open challenge endorsed by MICCAI.  
   
 The goal of this challenge is to segment the wound area from natural images photographed during clinical visits. In the dataset provided, over 1000 images are collected over 2 years from hundreds of patients. All images are completely de-identified by removing personal identifiers defined by HIPAA.   
   
