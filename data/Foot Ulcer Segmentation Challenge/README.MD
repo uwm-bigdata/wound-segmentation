@@ -1,11 +1,13 @@
 ## **The Foot Ulcer Segmentation Challenge (FUSeg)**  
 ![Dataset_Image](https://raw.githubusercontent.com/Pele324/ChronicWoundSeg/master/figures/Dataset.png)
 
-You have found the FUSeg challenge!  An open challenge endorsed by MICCAI.  
+You have found the FUSeg challenge!  An open challenge endorsed by MICCAI.   
   
 The goal of this challenge is to segment the wound area from natural images photographed during clinical visits. In the dataset provided, over 1200 images are collected over 2 years from hundreds of patients. All images are completely de-identified by removing personal identifiers defined by HIPAA.   
   
 More details in our [homepage](https://fusc.grand-challenge.org/FUSeg-2021/) on grand-challenge.org and our [challenge design](https://github.com/uwm-bigdata/wound-segmentation/blob/master/data/Foot%20Ulcer%20Segmentation%20Challenge/FootUlcerSegmentationChallenge2021.pdf).   
+  
+This is an open challenge and we look forward to your submission any time. Here is the [leaderboard](https://uwm-bigdata.github.io/wound-segmentation/) and we will keep updating it with new submissions.
   
 # Folder structure
 .  
@@ -41,11 +43,10 @@ To make sure that we will be able to run all submitted algorithms, we would like
 
 # Updates  
 Mar 9 2021  The training and validation dataset is published.  
-Testing data will be released in July 2021.  
-Submission deadline update: July 15 2021.  (The deadline was moved forward from Aug 1 2021 to July 15 2021)  
 July 5 2021  Additional 200 labeled images are added to the training dataset.  
 July 10 2021 A new testing dataset is published for sanity checks and your docker submission.  
-July 11 2021 The submission instructions are published.
+July 11 2021 The submission instructions are published.  
+Aug 16 2021 The leaderboard is released [here](https://uwm-bigdata.github.io/wound-segmentation/)  
 
 # Publication
 Wang, C., Anisuzzaman, D.M., Williamson, V. et al. Fully automatic wound segmentation with deep convolutional neural networks. Sci Rep 10, 21897 (2020). https://doi.org/10.1038/s41598-020-78799-w
