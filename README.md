@@ -17,7 +17,7 @@ The dataset is now available as a MICCAI online challenge. The training and vali
 The code is updated to be compatible with tf 2.x
 
 ## Requirements
-tensorflow-gpu==2.6.0
+tensorflow==2.6.0
     
 ## Run
     python3 train.py
