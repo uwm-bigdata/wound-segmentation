@@ -4,10 +4,6 @@
 This model is based on this repo:
 https://github.com/bonlime/keras-deeplab-v3-plus
 
-Now this model is only available for the TensorFlow backend,
-due to its reliance on `SeparableConvolution` layers, but Theano will add
-this layer soon.
-
 MobileNetv2 backbone is based on this repo:
 https://github.com/JonathanCMitchell/mobilenet_v2_keras
 
@@ -25,6 +21,7 @@ from __future__ import division
 from __future__ import print_function
 
 import numpy as np
+import tensorflow as tf
 
 from keras.models import Model
 from keras import layers
@@ -38,13 +35,16 @@ from keras.layers import Conv2D
 from keras.layers import DepthwiseConv2D
 from keras.layers import ZeroPadding2D
 from keras.layers import AveragePooling2D
-from keras.engine import Layer
-from keras.engine import InputSpec
-from keras.engine.topology import get_source_inputs
+from keras.layers import Layer
+from tensorflow.keras.layers import InputSpec
+from tensorflow.keras.utils import get_source_inputs
 from keras import backend as K
 from keras.applications import imagenet_utils
 from keras.utils import conv_utils
 from keras.utils.data_utils import get_file
+
+print("tf version:")
+print(tf.__version__)
 
 WEIGHTS_PATH_X = "https://github.com/bonlime/keras-deeplab-v3-plus/releases/download/1.1/deeplabv3_xception_tf_dim_ordering_tf_kernels.h5"
 WEIGHTS_PATH_MOBILE = "https://github.com/bonlime/keras-deeplab-v3-plus/releases/download/1.1/deeplabv3_mobilenetv2_tf_dim_ordering_tf_kernels.h5"
@@ -89,11 +89,11 @@ class BilinearUpsampling(Layer):
 
     def call(self, inputs):
         if self.upsampling:
-            return K.tf.image.resize_bilinear(inputs, (inputs.shape[1] * self.upsampling[0],
+            return tf.compat.v1.image.resize_bilinear(inputs, (inputs.shape[1] * self.upsampling[0],
                                                        inputs.shape[2] * self.upsampling[1]),
                                               align_corners=True)
         else:
-            return K.tf.image.resize_bilinear(inputs, (self.output_size[0],
+            return tf.compat.v1.image.resize_bilinear(inputs, (self.output_size[0],
                                                        self.output_size[1]),
                                               align_corners=True)
 
@@ -231,7 +231,7 @@ def _make_divisible(v, divisor, min_value=None):
 
 
 def _inverted_res_block(inputs, expansion, stride, alpha, filters, block_id, skip_connection, rate=1):
-    in_channels = inputs._keras_shape[-1]
+    in_channels = inputs.shape[-1]
     pointwise_conv_filters = int(filters * alpha)
     pointwise_filters = _make_divisible(pointwise_conv_filters, 8)
     x = inputs

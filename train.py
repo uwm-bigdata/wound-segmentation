@@ -41,7 +41,7 @@ data_gen = DataGen('./data/' + dataset + '/', split_ratio=0.2, x=input_dim_x, y=
 model = Deeplabv3(input_shape=(input_dim_x, input_dim_y, 3), classes=1)
 model_name = 'MobilenetV2'
 with CustomObjectScope({'relu6': relu6,'DepthwiseConv2D': DepthwiseConv2D, 'BilinearUpsampling': BilinearUpsampling}):
-    model = load_model('azh_wound_care_center_diabetic_foot_training_history/2020-02-10 02:57:27.555495.hdf5'
+    model = load_model('training_history/2019-12-19 01:53:15.480800.hdf5'
                        , custom_objects={'dice_coef': dice_coef, 'precision':precision, 'recall':recall})
 
 ######### Vgg16 ##########
@@ -73,4 +73,4 @@ training_history = model.fit_generator(data_gen.generate_data(batch_size=batch_s
                                        epochs=epochs)
 ### save the model weight file and its training history
 save_history(model, model_name, training_history, dataset, n_filters, epochs, learning_rate, loss, color_space='RGB',
-             path='./azh_wound_care_center_diabetic_foot_training_history/')
+             path='./training_history/')
