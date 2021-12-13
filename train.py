@@ -1,5 +1,4 @@
-from keras.optimizers import Adam
-from keras.utils import plot_model
+from tensorflow.keras.optimizers import Adam
 from keras.callbacks import EarlyStopping
 from keras.models import load_model
 from keras.utils.generic_utils import CustomObjectScope
@@ -35,7 +34,7 @@ data_gen = DataGen('./data/' + dataset + '/', split_ratio=0.2, x=input_dim_x, y=
 model = Deeplabv3(input_shape=(input_dim_x, input_dim_y, 3), classes=1)
 model_name = 'MobilenetV2'
 with CustomObjectScope({'relu6': relu6,'DepthwiseConv2D': DepthwiseConv2D, 'BilinearUpsampling': BilinearUpsampling}):
-    model = load_model('training_history/2019-12-19 01:53:15.480800.hdf5'
+    model = load_model('training_history/2019-12-19 01%3A53%3A15.480800.hdf5'
                        , custom_objects={'dice_coef': dice_coef, 'precision':precision, 'recall':recall})
 
 ######### Vgg16 ##########
