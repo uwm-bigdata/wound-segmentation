@@ -6,7 +6,6 @@ from keras.utils.generic_utils import CustomObjectScope
 
 from models.unets import Unet2D
 from models.deeplab import Deeplabv3, relu6, DepthwiseConv2D, BilinearUpsampling
-from models.separable_unet import Separable_Unet2D
 from models.FCN import FCN_Vgg16_16s
 from models.SegNet import SegNet
 
@@ -31,11 +30,6 @@ data_gen = DataGen('./data/' + dataset + '/', split_ratio=0.2, x=input_dim_x, y=
 ######### Unet ##########
 # unet2d = Unet2D(n_filters=n_filters, input_dim_x=None, input_dim_y=None, num_channels=3)
 # model, model_name = unet2d.get_unet_model_yuanqing()
-
-######### Seperable Unet ##########
-# sep_unet = Seperable_Unet2D(n_filters=n_filters, input_dim_x=input_dim_x, input_dim_y=input_dim_y, num_channels=3)
-# model, model_name = sep_unet.get_seperable_unet_model_5_levels()
-# model, model_name = sep_unet.get_sep_unet_v3()
 
 ######### MobilenetV2 ##########
 model = Deeplabv3(input_shape=(input_dim_x, input_dim_y, 3), classes=1)
