@@ -1,4 +1,4 @@
-# Call for Papers: Special Issue on <u>Recent Advances in Artificial Intelligence for Wound Assessment</u>
+# Call for Papers: Special Issue on <ins>Recent Advances in Artificial Intelligence for Wound Assessment</ins>
 In collaboration with **Bioengineering**, an open access journal by **MDPI**, we are soliciting papers in various AI technologies for wound assessment. More detail can be found below or at the journal's [webpage](https://www.mdpi.com/journal/bioengineering/special_issues/HFOU68406T).
 
 ![Call For Papers](https://uwm-bigdata.github.io/CFP-Poster.jpg)
